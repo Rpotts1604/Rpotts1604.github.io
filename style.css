@@ -28,7 +28,8 @@ nav {
 }
 
 .bg{
-    background-image: url(images/PCB-bg.jpg) repeat;
+    background-image: url(images/PCB-bg.jpg);
+    background-repeat: repeat;
     position: fixed;
     background-size: cover;
     top: 0;
@@ -305,7 +306,8 @@ nav #check{
     }
 
     .bg{
-        background-image: url(images/PCB-bg.jpg) repeat;
+        background-image: url(images/PCB-bg.jpg);
+        background-repeat: repeat;
         position: fixed;
         background-size: auto;
         top: 0;
