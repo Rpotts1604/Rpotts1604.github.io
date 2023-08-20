@@ -79,3 +79,12 @@ for (i = 0; i < aboutPanel.length; i++) {
     }
   });
 }
+
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+var image = document.getElementById("logo")
+
+if (prefersDarkScheme.matches) {
+  image.src="images/ValleyTechLogoInverted.png"
+} else {
+  image.src="images/ValleyTechLogo.png"
+}
