@@ -274,6 +274,7 @@ nav #check{
     text-align: center;
     line-height: 110px;
     font-size: 2.5vw;
+    white-space: normal;
 }
 .contact-info p{
     font-weight: 400;
@@ -366,6 +367,7 @@ nav #check{
     text-align: center;
     line-height: 110px;
     font-size: 5vw;
+    white-space: normal;
     }
     
     .services-panel{
