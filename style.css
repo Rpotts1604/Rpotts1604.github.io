@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background: #80CCCC;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo-image{
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 30px;
+}
+
+
+.slogan-main{
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    color: whitesmoke;
+    line-height: 5vw;
+    position: relative;
+    top: 50px;
+}
+.slogan-container{
+    padding: 20px;
+}
+
+.descriptor-page-contnet{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    font-size: large;
+    position: relative;
+    top: 80px;
+    padding: 18px;
+    height: max-content;
+}
+
+.descriptor-text-container{
+    width: 100%;
+    height: max-content;
+    background-color: none;
+    position: relative;
+}
+
+.about-us-content{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.about-us-text{
+    padding: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    padding-left: 20px;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+ul a:hover{
+    background: rgb(231, 231, 231);
+    transition: .5s;
+}
+
+.check-button{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+nav #check{
+    display: none;
+}
+
+.services-text{
+    margin: 20px;
+}
+
+
+.panel-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: max-content;
+    position: relative;
+    top: 80px;
+}
+
+.services-panel{
+    width: 30vw;
+    height: max-content;
+    background-color: whitesmoke;
+    border: solid 3px;
+    border-color: #80CCCC;
+}
+
+.services-panel img{
+    max-height: 200px;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 5px;
+}
+
+.service-name{
+    position: relative;
+    text-align: center;
+    font-size: 2vw;
+    padding: 10px;
+}
+
+.service-panel-button{
+    background-color: #578a8a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    top: 5px;
+    transform: translate(-50%);
+}
+
+.service-panel-button:hover{
+    background-color: #3b5e5e;
+    transition: .5s;
+}
+
+.service-panel-button:active{
+    background-color: #578a8a;
+    transition: .2s;
+}
+
+.service-desc{
+    position: relative;
+    font-size: 1.6vw;
+    padding-bottom: 5px;
+}
+
+.service-panel-content{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
+    margin-top: 30px;
+}
+
+.about-us-panel{
+    height: max-content;
+    background-color: whitesmoke;
+    flex-basis: 40%;
+    border: #80CCCC solid;
+    border-color: #80CCCC;
+}
+
+.about-us-panel-button{
+    background-color: #578a8a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+}
+
+.about-us-panel-button:hover{
+    background-color: #3b5e5e;
+    transition: .5s;
+}
+
+.about-us-panel-button:active{
+    background-color: #578a8a;
+    transition: .2s;
+}
+
+.about-us-panel img{
+    max-width: 80%;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+}
+
+.about-us-panel-content{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-us-desc{
+    position: relative;
+    font-size: 1.4vw;
+    padding: 10px;
+}
+
+.contact-info{
+    font-weight: 500;
+    text-align: center;
+    line-height: 110px;
+}
+.contact-info p{
+    font-weight: 400;
+}
+
+
+@media (max-width: 950px){
+    .logo-image{
+        height: 25px;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding-left: 30px;
+    }
+
+    nav ul li a{
+        color: rgb(0, 0, 0);
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .check-button{
+        display: block;
+    }
+
+    .slogan-main{
+        font-size: 6vw;
+        font-weight: 500;
+        text-align: center;
+        padding: 50px 0 50px 0;
+        color: whitesmoke;
+        line-height: 7vw;
+        position: relative;
+        top: 50px;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #578a8a;
+        top: 80px;
+        left: 200%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 4vw;
+    }
+
+    ul a:hover{
+        background: none;
+        color: white;
+    }
+    nav #check:checked ~ul{
+        left: 0;    
+    }
+
+    .panel-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        height: max-content;
+        position: relative;
+    }
+    
+    .services-panel{
+        width: 75vw;
+        max-width: 400px;
+        height: max-content;
+        background-color: whitesmoke;
+        border: solid 3px;
+        border-color: #80CCCC;
+    }
+
+    .service-name{
+        position: relative;
+        text-align: center;
+        font-size: 6vw;
+        padding: 10px;
+    }
+
+    .service-desc{
+        position: relative;
+        font-size: 2.9vw;
+    }
+
+    .about-us-panel{
+        height: max-content;
+        background-color: whitesmoke;
+        flex-basis: 60vw;
+    }
+
+    .about-us-panel img{
+        max-width: 50%;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 20px;
+    }
+
+    .about-us-desc{
+        position: relative;
+        font-size: 2vw;
+        padding: 10px;
+    }
+
+}
+
+.bg{
+    background-image: url(images/PCB-bg.jpg);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: -1;
+}
+
+
+.page-desc{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    color: whitesmoke;
+    line-height: 60px;
+}
+
+.page-desc-container{
+    padding: 40px;
+}
+
+.about-us-button {
+    background-color: #578a8a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.about-us-button:hover{
+    background-color: #3b5e5e;
+    transition: .5s;
+}
+
+.about-us-button:active{
+    background-color: #578a8a;
+    transition: .2s;
+}
+
+.services-button {
+    background-color: #578a8a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+}
+
+.services-button:hover{
+    background-color: #3b5e5e;
+    transition: .5s;
+}
+
+.services-button:active{
+    background-color: #578a8a;
+    transition: .2s;
+}
+
+.services-content{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    top: 120px;
+    text-align: center;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.contact-button {
+    background-color: #578a8a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    top: 140px;
+    transform: translate(-50%);
+}
+
+.contact-button:hover{
+    background-color: #3b5e5e;
+    transition: .5s;
+}
+
+.contact-button:active{
+    background-color: #578a8a;
+    transition: .2s;
+}
+
+.contact-content{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    top: 160px;
+    text-align: center;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.contact-text{
+    padding: 20px;
+    list-style: none;
+}
+
+.feedback-button {
+    background-color: #578a8a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%);
+}
+
+.feedback-button:hover{
+    background-color: #3b5e5e;
+    transition: .5s;
+}
+
+.feedback-button:active{
+    background-color: #578a8a;
+    transition: .2s;
+}
+
+.feedback-content{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.feedback-text{
+    padding: 20px;
+    text-align: center;
+}
