@@ -51,6 +51,7 @@ nav {
     padding: 20px;
 }
 
+
 .descriptor-page-contnet{
     width: 100%;
     background-color: whitesmoke;
@@ -81,9 +82,12 @@ nav {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
 .about-us-text{
     padding: 20px;
 }
+
+
 nav ul{
     float: right;
     margin-right: 20px;
@@ -121,6 +125,7 @@ nav #check{
     display: none;
 }
 
+
 .services-text{
     margin: 20px;
 }
@@ -135,6 +140,17 @@ nav #check{
     height: max-content;
     position: relative;
     top: 80px;
+}
+
+.panel-container-home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: max-content;
+    position: relative;
+    top: 40px;
 }
 
 .services-panel{
@@ -262,6 +278,7 @@ nav #check{
     transition: height 0.2s ease-out;
     margin-top: 30px;
     text-align: center;
+    
 }
 
 .about-us-desc{
@@ -270,6 +287,79 @@ nav #check{
     padding: 10px;
 }
 
+.home-panel{
+    height: max-content;
+    background-color: whitesmoke;
+    flex-basis: 40vw;
+    border: #80CCCC solid;
+    border-color: #80CCCC;
+}
+
+
+.home-panel-button{
+    background-color: #578a8a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+    margin-right: 50%;
+}
+
+.home-panel-button:hover{
+    background-color: #3b5e5e;
+    transition: .5s;
+}
+
+.home-panel-button:active{
+    background-color: #578a8a;
+    transition: .2s;
+}
+
+.home-panel img{
+    max-width: 80%;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+}
+
+.home-panel-content{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.panel-content-opacity{
+    opacity: 0;
+    transition: .6s;
+}
+
+.home-desc{
+    position: relative;
+    font-size: 1.6vw;
+    padding: 10px;
+}
+.home-desc-li{
+    position: relative;
+    font-size: 1.6vw;
+    padding: 10px;
+}
 .contact-info{
     font-weight: 500;
     text-align: center;
@@ -307,12 +397,12 @@ nav #check{
 
     .bg{
         background-image: url(images/PCB-bg.jpg);
-        background-repeat: repeat;
         position: fixed;
-        background-size: auto;
+        background-size: cover;
         top: 0;
         z-index: -1;
     }
+    
 
     .slogan-main{
         font-size: 6vw;
@@ -354,6 +444,14 @@ nav #check{
         left: 0;    
     }
 
+    .contact-info{
+        font-weight: 500;
+        text-align: center;
+        line-height: 110px;
+        font-size: 5vw;
+        white-space: normal;
+    }
+
     .panel-container{
         display: flex;
         flex-wrap: wrap;
@@ -364,12 +462,15 @@ nav #check{
         position: relative;
     }
 
-    .contact-info{
-    font-weight: 500;
-    text-align: center;
-    line-height: 110px;
-    font-size: 5vw;
-    white-space: normal;
+    .panel-container-home{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        height: max-content;
+        position: relative;
+        top: 40px;
     }
     
     .services-panel{
@@ -397,6 +498,8 @@ nav #check{
         height: max-content;
         background-color: whitesmoke;
         flex-basis: 60vw;
+        border: #80CCCC solid;
+        border-color: #80CCCC;
     }
 
     .about-us-panel img{
@@ -414,7 +517,36 @@ nav #check{
         padding: 10px;
     }
 
+    .home-panel{
+        height: max-content;
+        background-color: whitesmoke;
+        flex-basis: 60vw;
+        border: #80CCCC solid;
+        border-color: #80CCCC;
+    }
+
+    .home-panel img{
+        max-height: 200px;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 20px;
+    }
+
+    .home-desc{
+        position: relative;
+        font-size: 3.5vw;
+        padding: 10px;
+    }
+    .home-desc-li{
+        position: relative;
+        font-size: 3.5vw;
+        padding: 10px;
+    }
+
 }
+
 
 
 

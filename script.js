@@ -1,58 +1,9 @@
-var about = document.getElementsByClassName("about-us-button");
-var services = document.getElementsByClassName("services-button");
-var contact = document.getElementsByClassName("contact-button");
-var feedback = document.getElementsByClassName("feedback-button")
 var i;
-
-for (i = 0; i < about.length; i++) {
-  about[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-
-for (i = 0; i < services.length; i++) {
-  services[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-
-for (i = 0; i < contact.length; i++) {
-  contact[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-
-for (i = 0; i < feedback.length; i++) {
-  feedback[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-
+var aboutPanel = document.getElementsByClassName("about-us-panel-button");
 var servicePanel = document.getElementsByClassName("service-panel-button");
+var homeButton = document.getElementsByClassName("home-panel-button")
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+var image = document.getElementById("logo")
 
 for (i = 0; i < servicePanel.length; i++) {
   servicePanel[i].addEventListener("click", function() {
@@ -60,13 +11,30 @@ for (i = 0; i < servicePanel.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.height){
       content.style.height = null;
+      content.style.opacity = 0;
     } else {
       content.style.height = content.scrollHeight + "px";
+      content.style.opacity = 100;
     }
   });
 }
 
-var aboutPanel = document.getElementsByClassName("about-us-panel-button");
+
+for (i = 0; i < homeButton.length; i++) {
+  homeButton[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.height){
+      content.style.height = null;
+      content.style.opacity = 0;
+    } else {
+      content.style.height = content.scrollHeight + "px";
+      content.style.opacity = 100;
+    }
+  });
+}
+
+
 
 for (i = 0; i < aboutPanel.length; i++) {
   aboutPanel[i].addEventListener("click", function() {
@@ -74,17 +42,20 @@ for (i = 0; i < aboutPanel.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.height){
       content.style.height = null;
+      content.style.opacity = 0;
     } else {
       content.style.height = content.scrollHeight + "px";
+      content.style.opacity = 100;
     }
   });
 }
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-var image = document.getElementById("logo")
+/* EARLY TESTING STAGE
 
 if (prefersDarkScheme.matches) {
   image.src="images/ValleyTechLogoInverted.png"
 } else {
   image.src="images/ValleyTechLogo.png"
 }
+
+*/
