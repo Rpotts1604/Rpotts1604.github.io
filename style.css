@@ -140,6 +140,7 @@ nav #check{
     height: max-content;
     position: relative;
     top: 80px;
+    padding: 100px;
 }
 
 .panel-container-home{
@@ -151,10 +152,11 @@ nav #check{
     height: max-content;
     position: relative;
     top: 40px;
+    padding: 100px;
 }
 
 .services-panel{
-    width: 30vw;
+    width: 20%;
     height: max-content;
     background-color: whitesmoke;
     border: solid 3px;
@@ -290,9 +292,11 @@ nav #check{
 .home-panel{
     height: max-content;
     background-color: whitesmoke;
-    flex-basis: 40vw;
+    flex-basis: 40%;
     border: #80CCCC solid;
     border-color: #80CCCC;
+    list-style: none;
+    
 }
 
 
@@ -371,6 +375,19 @@ nav #check{
     font-weight: 400;
 }
 
+.page-desc{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    color: whitesmoke;
+    line-height: 60px;
+}
+
+.page-desc-container{
+    padding: 40px;
+}
 
 @media (max-width: 950px){
     .logo-image{
@@ -413,6 +430,16 @@ nav #check{
         line-height: 7vw;
         position: relative;
         top: 50px;
+    }
+
+    .page-desc{
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        top: 80px;
+        color: whitesmoke;
+        line-height: 60px;
     }
 
     nav ul{
@@ -491,7 +518,7 @@ nav #check{
 
     .service-desc{
         position: relative;
-        font-size: 2.9vw;
+        font-size: 3.5vw;
     }
 
     .about-us-panel{
@@ -526,7 +553,7 @@ nav #check{
     }
 
     .home-panel img{
-        max-height: 200px;
+        max-height: 300px;
         position: relative;
         top: 0%;
         left: 50%;
@@ -550,19 +577,6 @@ nav #check{
 
 
 
-.page-desc{
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    position: relative;
-    top: 80px;
-    color: whitesmoke;
-    line-height: 60px;
-}
-
-.page-desc-container{
-    padding: 40px;
-}
 
 .about-us-button {
     background-color: #578a8a;
