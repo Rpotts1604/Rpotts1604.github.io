@@ -141,6 +141,7 @@ nav #check{
     position: relative;
     top: 80px;
     padding: 100px;
+    padding-top: 0;
 }
 .services-panel-container{
     display: flex;
@@ -163,6 +164,7 @@ nav #check{
     position: relative;
     top: 40px;
     padding: 100px;
+    padding-top: 0;
 }
 
 .services-panel{
