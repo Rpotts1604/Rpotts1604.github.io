@@ -308,7 +308,6 @@ nav #check{
     border: #80CCCC solid;
     border-color: #80CCCC;
     list-style: none;
-    
 }
 
 
@@ -569,7 +568,7 @@ nav #check{
     .home-panel{
         height: max-content;
         background-color: whitesmoke;
-        flex-basis: 60vw;
+        flex-basis: 80vw;
         border: #80CCCC solid;
         border-color: #80CCCC;
     }
