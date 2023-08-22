@@ -433,24 +433,24 @@ nav #check{
     
 
     .slogan-main{
-        font-size: 6vw;
+        font-size: 40px;
         font-weight: 500;
         text-align: center;
         padding: 50px 0 50px 0;
         color: whitesmoke;
-        line-height: 7vw;
+        line-height: 45px;
         position: relative;
         top: 50px;
     }
 
     .page-desc{
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 500;
         text-align: center;
         position: relative;
         top: 80px;
         color: whitesmoke;
-        line-height: 60px;
+        line-height: 45px;
     }
 
     nav ul{
